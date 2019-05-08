@@ -1,0 +1,16 @@
+<h1>新しい記事を投稿</h1>
+<%= form_for :blog, url: blogs_path do |f| %>
+  <p>
+    <%= f.label :title, "記事のタイトル" %><br>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :text, "記事の内容" %><br>
+    <%= f.text_area :text, cols: 60, rows: 8 %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

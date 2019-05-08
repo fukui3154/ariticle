@@ -1,0 +1,24 @@
+current directory: /Users/taco3suisui/rails/article/vendor/bundle/ruby/2.3.0/gems/redcarpet-2.3.0/ext/redcarpet
+/Users/taco3suisui/.rbenv/versions/2.3.1/bin/ruby -I /Users/taco3suisui/.rbenv/versions/2.3.1/lib/ruby/site_ruby/2.3.0 -r ./siteconf20190426-35505-1654k72.rb extconf.rb
+creating Makefile
+
+current directory: /Users/taco3suisui/rails/article/vendor/bundle/ruby/2.3.0/gems/redcarpet-2.3.0/ext/redcarpet
+make "DESTDIR=" clean
+
+current directory: /Users/taco3suisui/rails/article/vendor/bundle/ruby/2.3.0/gems/redcarpet-2.3.0/ext/redcarpet
+make "DESTDIR="
+compiling buffer.c
+compiling autolink.c
+compiling rc_markdown.c
+compiling houdini_href_e.c
+compiling stack.c
+compiling houdini_html_e.c
+compiling markdown.c
+compiling html_smartypants.c
+compiling html.c
+compiling rc_render.c
+linking shared-object redcarpet.bundle
+
+current directory: /Users/taco3suisui/rails/article/vendor/bundle/ruby/2.3.0/gems/redcarpet-2.3.0/ext/redcarpet
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 redcarpet.bundle ./.gem.20190426-35505-1u79cul
