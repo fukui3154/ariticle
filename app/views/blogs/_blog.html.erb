@@ -1,7 +1,6 @@
-
 <tr>
-      <td><%= link_to blog.title, blog_path(blog.id) %></td>
-      <td><%= strip_tags(markdown(blog.text)).truncate(20) %></td>
-      <td><%= link_to "編集する",edit_blog_path(blog.id) %></td>
+  <td><%= link_to blog.title, blog_path(blog.id) %></td>
+  <td><%= strip_tags(markdown(blog.text)).truncate(20) %></td>
+  <td><%= link_to "編集する",edit_blog_path(blog.id) %></td>
 </tr>
 <!-- rails命名規則：　部分テンプレにはメソッドを単数形　 -->

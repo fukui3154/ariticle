@@ -1,7 +1,6 @@
 class BlogsController < ApplicationController
   def index
-    @blogs = Blog.all
-
+    @blogs = Blog.all.order('id desc')
 
     @title = params[:title]
     respond_to do |format|
@@ -15,17 +14,14 @@ class BlogsController < ApplicationController
   end
 
   def create
-    @blogs = Blog.all
-    @blog = Blog.new(blog_params)
-    respond_to do |f|
-      if @blog.save
-        f.html
-        f.js
-      else
-        f.js { render :new }
+    @blogs = Blog.all.order('id desc')
+    blog = Blog.new(blog_params)
+    respond_to do |format|
+      if blog.save
+        format.html
+        format.js
       end
     end
-    
   end
 
   def edit
